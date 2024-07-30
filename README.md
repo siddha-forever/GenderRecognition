@@ -1,4 +1,4 @@
-# Gender Recognition App
+# Gender Recognition App Using MATLAB
 
 This MATLAB app performs real-time gender identification using audio recordings. It uses various signal processing techniques to analyze the frequency of the voice and determine whether the speaker is male or female.
 
