@@ -44,22 +44,6 @@ classdef gender_recognition_app < matlab.apps.AppBase
 
             if app.flag==1
                 [y ,Fs]=audioread(app.file_);
-                % %[y ,Fs]=audioread('audio.wav');
-                % frame=3500;
-                % app.aud_file=y;
-                % app.aud_fs=Fs;
-                % [b0,a0]=butter(2,350/(Fs/2));
-                % for i=1:length(y)/frame
-                %     x=y(1+(i-1)*frame:i*frame);
-                %     xin = abs(x);
-                %     xin=filter(b0,a0,xin);
-                %     xin = xin-mean(xin);
-                %     x2=zeros(length(xin),1);
-                %     x2(1:length(x)-1)=xin(2:length(x));
-                %     zc=length(find((xin>0 & x2<0) | (xin<0 & x2>0)));
-                %     F0(i)=0.5*Fs*zc/length(x);
-                % end
-
                 F0 = pitch(y, Fs);
 
 
